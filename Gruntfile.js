@@ -500,7 +500,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('test', ['env:test', 'mochaTest']);
   grunt.registerTask('test-travis', ['env:travis', 'mochaTest']);
-  grunt.registerTask('test-ci', ['env:ci --force', 'mochaTest']);
+  grunt.registerTask('test-ci', ['env:ci', 'mochaTest']);
 
   grunt.registerTask('e2e', ['protractor']);
   grunt.registerTask('e2e-development', ['env:development', 'protractor']);
