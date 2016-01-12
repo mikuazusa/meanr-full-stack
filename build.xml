@@ -152,7 +152,7 @@
         </exec>
     </target>
 
-    <target name="test-node-app-connect" depends="app-start">
+<!--    <target name="test-node-app-connect" depends="app-start">
         <retry retrycount="60" retrydelay="1000">
             <fail message="Node app connection failure">
                 <condition>
@@ -163,7 +163,7 @@
             </fail>
         </retry>
     </target>
-
+-->
     <target name="app-seed" depends="test-node-app-connect">
         <exec executable="${node.path}/node" failonerror="true">
             <env key="NODE_ENV" value="ci"/>
