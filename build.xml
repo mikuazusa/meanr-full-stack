@@ -150,7 +150,6 @@
             <env key="NODE_ENV" value="ci"/>
             <arg value="app.js"/>
         </exec>
-        <sleep seconds="120"/>
     </target>
 
     <target name="test-node-app-connect" depends="app-start">
