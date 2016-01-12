@@ -53,9 +53,9 @@
             <arg value="-d"/>
             <arg value="-p"/>
             <arg value="6380:6379"/>
-            <arg value="-name"/>
+            <arg value="--name"/>
             <arg value="redis-ci"/>
-            <arg value="rudijs/redis"/>
+            <arg value="rudijs/docker-redis"/>
         </exec>
         <echo message="Sleep for 5 seconds to allow the new Redis start"/>
         <sleep seconds="5"/>
@@ -80,9 +80,9 @@
             <arg value="-d"/>
             <arg value="-p"/>
             <arg value="27018:27017"/>
-            <arg value="-name"/>
+            <arg value="--name"/>
             <arg value="mongodb-ci"/>
-            <arg value="rudijs/mongodb-ci"/>
+            <arg value="rudijs/docker-mongodb-ci"/>
         </exec>
         <echo message="Sleep for 60 seconds to allow the new MongoDB instance to pre-allocate 3GBs of database filesystem space"/>
         <sleep seconds="60"/>
