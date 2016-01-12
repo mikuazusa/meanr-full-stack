@@ -134,7 +134,7 @@
     <target name="test" depends="jshint">
         <exec executable="${node.path}/grunt" failonerror="true">
             <env key="PATH" value="${node.path}:${env.PATH}"/>
-            <arg value="test-ci"/>
+            <arg value="test-ci --force"/>
         </exec>
     </target>
 
