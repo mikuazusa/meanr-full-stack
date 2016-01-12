@@ -132,14 +132,14 @@
     </target>
 
     <target name="test" depends="jshint">
-        <exec executable="${node.path}/grunt" failonerror="true">
+        <exec executable="${node.path}/grunt" failonerror="false">
             <env key="PATH" value="${node.path}:${env.PATH}"/>
-            <arg value="test-ci --force"/>
+            <arg value="test-ci"/>
         </exec>
     </target>
 
     <target name="karma" depends="test">
-        <exec executable="${node.path}/grunt" failonerror="true">
+        <exec executable="${node.path}/grunt" failonerror="false">
             <env key="PATH" value="${node.path}:${env.PATH}"/>
             <arg value="karma:continuous"/>
         </exec>
