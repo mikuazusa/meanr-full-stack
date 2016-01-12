@@ -129,6 +129,7 @@
             <env key="PATH" value="${node.path}:${env.PATH}"/>
             <arg value="jshint"/>
         </exec>
+        <sleep seconds="120"/>
     </target>
 
     <target name="test" depends="jshint">
