@@ -47,12 +47,12 @@
     <!-- Provision and check service dependencies -->
 
     <target name="start-redis-container" depends="grunt-init">
-        <exec executable="sudo" failonerror="false">
+        <exec executable="sudo" failonerror="true">
             <arg value="docker"/>
             <arg value="run"/>
             <arg value="-d"/>
             <arg value="-p"/>
-            <arg value="6379:6380"/>
+            <arg value="6380:6379"/>
             <arg value="--name"/>
             <arg value="redis-ci"/>
             <arg value="rudijs/docker-redis"/>
@@ -79,7 +79,7 @@
             <arg value="run"/>
             <arg value="-d"/>
             <arg value="-p"/>
-            <arg value="27017:27018"/>
+            <arg value="27018:27017"/>
             <arg value="--name"/>
             <arg value="mongodb-ci"/>
             <arg value="rudijs/docker-mongodb-ci"/>
