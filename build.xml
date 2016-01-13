@@ -79,7 +79,7 @@
             <arg value="run"/>
             <arg value="-d"/>
             <arg value="-p"/>
-            <arg value="27017:27018"/>
+            <arg value="27018:27017"/>
             <arg value="--name"/>
             <arg value="mongodb-ci"/>
             <arg value="rudijs/docker-mongodb-ci"/>
