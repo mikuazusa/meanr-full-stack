@@ -47,7 +47,7 @@
     <!-- Provision and check service dependencies -->
 
     <target name="start-redis-container" depends="grunt-init">
-        <exec executable="sudo" failonerror="true">
+        <exec executable="sudo" failonerror="false">
             <arg value="docker"/>
             <arg value="run"/>
             <arg value="-d"/>
