@@ -158,7 +158,7 @@
                 <condition>
                     <not>
                         <!--<socket server="baidu.com" port="80"/>-->
-                        <socket server="127.0.0.1" port="3000"/>
+                        <socket server="159.203.44.207" port="3000"/>
                     </not>
                 </condition>
             </fail>
