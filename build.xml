@@ -66,7 +66,7 @@
             <fail message="Redis connection failure">
                 <condition>
                     <not>
-                        <socket server="127.0.0.1" port="6380"/>
+                        <socket server="127.0.0.1" port="6379"/>
                     </not>
                 </condition>
             </fail>
